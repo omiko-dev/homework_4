@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_one">#22343C</color>
+    <color name="bg_two">#1F2E35</color>
+    <color name="rectangle_bg_one">#40DF9F</color>
+    <color name="rectangle_bg_two">#3ED598</color>
+    <color name="title_color">#FFFFFF</color>
+    <color name="hint_color">#96A7AF</color>
+    <color name="user_icon_bg">#625B39</color>
+    <color name="edit_text_tint_color">#0D000000</color>
+    <color name="back_arrow_bg">#286053</color>
+    <color name="arrow_green_bg">#3DD598</color>
+</resources>

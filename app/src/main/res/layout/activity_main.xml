@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:paddingHorizontal="32dp"
+    android:gravity="center|start"
+    tools:context=".MainActivity">
+
+    <View
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:background="@drawable/rectangle"
+        android:layout_marginBottom="25dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textColor="@color/title_color"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lets_introduce"
+        android:textColor="@color/hint_color"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:background="@drawable/user_icon">
+
+        </View>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:hint="@string/et_full_name"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/edit_text_tint_color"
+            android:layout_marginStart="20dp"
+            android:layout_height="50dp"
+            tools:ignore="VisualLintTextFieldSize" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:background="@drawable/user_icon">
+        </View>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:hint="@string/et_user_name"
+            android:textColorHint="@color/hint_color"
+            android:backgroundTint="@color/edit_text_tint_color"
+            android:layout_marginStart="20dp"
+            android:layout_height="50dp"
+            tools:ignore="VisualLintTextFieldSize" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/back_arrow"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:background="@drawable/rectangle"
+            android:drawableEnd="@drawable/right_arrow_icon"
+            android:drawablePadding="-30dp"
+            android:drawableTint="@color/white"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="#F0F4C3"
+            tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
