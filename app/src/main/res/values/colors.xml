@@ -12,4 +12,5 @@
     <color name="edit_text_tint_color">#0D000000</color>
     <color name="back_arrow_bg">#286053</color>
     <color name="arrow_green_bg">#3DD598</color>
+    <color name="logo_shadow_color">#4D0FDA89</color>
 </resources>

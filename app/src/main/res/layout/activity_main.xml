@@ -10,11 +10,16 @@
     android:gravity="center|start"
     tools:context=".MainActivity">
 
-    <View
+    <androidx.cardview.widget.CardView
         android:layout_width="45dp"
         android:layout_height="43dp"
-        android:background="@drawable/rectangle"
-        android:layout_marginBottom="25dp"/>
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/rectangle_bg_two"
+        app:cardElevation="6dp"
+        android:outlineSpotShadowColor="@color/rectangle_bg_one"
+        android:background="@color/rectangle_bg_one"
+        android:layout_marginBottom="30dp"
+        tools:ignore="UnusedAttribute" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="wrap_content"
@@ -47,7 +52,9 @@
         </View>
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:maxLines="1"
             android:layout_width="match_parent"
+            android:textColor="@color/white"
             android:hint="@string/et_full_name"
             android:textColorHint="@color/hint_color"
             android:backgroundTint="@color/edit_text_tint_color"
@@ -69,8 +76,10 @@
         </View>
 
         <androidx.appcompat.widget.AppCompatEditText
+            android:maxLines="1"
             android:layout_width="match_parent"
             android:hint="@string/et_user_name"
+            android:textColor="@color/white"
             android:textColorHint="@color/hint_color"
             android:backgroundTint="@color/edit_text_tint_color"
             android:layout_marginStart="20dp"
@@ -96,18 +105,19 @@
             android:layout_height="10dp"/>
 
         <com.google.android.material.button.MaterialButton
-            android:backgroundTint="@color/rectangle_bg_two"
             android:layout_width="match_parent"
-            app:cornerRadius="10dp"
             android:layout_height="56dp"
+            android:backgroundTint="@color/rectangle_bg_two"
             android:gravity="center"
+            android:text="@string/next"
             android:textAllCaps="true"
             android:textColor="@color/white"
-            android:text="@string/next"
+            app:cornerRadius="10dp"
             app:icon="@drawable/right_arrow_icon"
-            app:iconTint="@color/white"
             app:iconGravity="textEnd"
-            app:iconPadding="10dp"/>
+            app:iconPadding="10dp"
+            app:iconTint="@color/white"
+            tools:ignore="VisualLintButtonSize,TextContrastCheck" />
 
     </LinearLayout>
 
