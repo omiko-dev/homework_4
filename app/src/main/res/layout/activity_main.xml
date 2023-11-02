@@ -2,6 +2,7 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
@@ -94,18 +95,19 @@
             android:layout_width="30dp"
             android:layout_height="10dp"/>
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="100"
-            android:background="@drawable/rectangle"
-            android:drawableEnd="@drawable/right_arrow_icon"
-            android:drawablePadding="-30dp"
-            android:drawableTint="@color/white"
+        <com.google.android.material.button.MaterialButton
+            android:backgroundTint="@color/rectangle_bg_two"
+            android:layout_width="match_parent"
+            app:cornerRadius="10dp"
+            android:layout_height="56dp"
             android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
             android:text="@string/next"
-            android:textColor="#F0F4C3"
-            tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+            app:icon="@drawable/right_arrow_icon"
+            app:iconTint="@color/white"
+            app:iconGravity="textEnd"
+            app:iconPadding="10dp"/>
 
     </LinearLayout>
 
