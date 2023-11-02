@@ -1,7 +1,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 <item
-    android:width="48dp"
-    android:height="48dp">
+    android:width="58dp"
+    android:height="59dp">
     <shape
         android:shape="rectangle">
         <solid android:color="@color/back_arrow_bg" />
